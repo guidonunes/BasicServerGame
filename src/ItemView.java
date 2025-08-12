@@ -24,6 +24,7 @@ public class ItemView {
                     boolean raro = sc.nextBoolean();
                     System.out.println("Digite o nivel de poder do item: ");
                     int nivelPoder = sc.nextInt();
+                    item = new Item(nome, descricao, raro, nivelPoder);
                     break;
                 case 2:
                     if (item != null) {

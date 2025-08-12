@@ -1,13 +1,18 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        PersonagemMagico mago = new PersonagemMagico("Gandalf", 100, "Magia");
+        Scanner sc = new Scanner(System.in);
+        int op;
 
-        System.out.println(mago.nome + " Energia: " + mago.nivelEnergia + " Poder: " + mago.poderMagico);
+        do {
+            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n0-Sair");
+            op = sc.nextInt();
 
-        PersonagemMagico elfo = new PersonagemMagico("Legolas", 50, "Arqueira");
 
-        System.out.println(elfo.nome + " Energia: " + elfo.nivelEnergia + " Poder: " + elfo.poderMagico);
+        } while(op != 0);
+        sc.close();
     }
 }

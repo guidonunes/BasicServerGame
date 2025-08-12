@@ -9,5 +9,13 @@ public class Main {
         mago.poderMagico = "Magia";
 
         System.out.println(mago.nome + " Energia: " + mago.nivelEnergia + " Poder: " + mago.poderMagico);
+
+        PersonagemMagico elfo = new PersonagemMagico();
+
+        elfo.nome = "Legolas";
+        elfo.nivelEnergia = 50;
+        elfo.poderMagico = "Magia";
+
+        System.out.println(elfo.nome + " Energia: " + elfo.nivelEnergia + " Poder: " + elfo.poderMagico);
     }
 }

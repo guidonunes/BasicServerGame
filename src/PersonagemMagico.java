@@ -3,6 +3,8 @@ public class PersonagemMagico {
     int nivelEnergia;
     String poderMagico;
 
+    HabilidadeEspecial habilidade;
+
     public PersonagemMagico(String nome, int nivelEnergia, String poderMagico) {
         this.nome = nome;
         this.nivelEnergia = nivelEnergia;

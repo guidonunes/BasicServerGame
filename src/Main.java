@@ -23,9 +23,20 @@ public class Main {
                     personagem.nome = nome;
                     personagem.nivelEnergia = energia;
                     personagem.poderMagico = poder;
+
+                    System.out.println("Digite o nome da habilidade especial:");
+                    String nomeHabilidade = sc.next() + sc.nextLine();
+                    System.out.println("Digite o custo de energia para usar a habilidade especial:");
+                    int nivelEnergia = sc.nextInt();
+                    System.out.println("A habilidade está ativada? (true/false):");
+                    boolean ativada = sc.nextBoolean();
+
+                    HabilidadeEspecial habilidadeEspecial = new HabilidadeEspecial(nomeHabilidade, nivelEnergia, ativada);
+                    personagem.habilidade = habilidadeEspecial;
                     break;
                 case 2:
                     System.out.println("Nome: " + personagem.nome + "\nPoder: " +personagem.poderMagico + "\nNivel de Energia: " + personagem.nivelEnergia);
+                    System.out.println("Habilidade: " + personagem.habilidade.nome + " Custo energia: " + personagem.habilidade.custoEnergia + " Habilitada: " + personagem.habilidade.habilitada);
                     break;
                 case 0:
                     System.out.println("Finalizando o programa");

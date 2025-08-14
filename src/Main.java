@@ -9,7 +9,8 @@ public class Main {
         int op;
 
         do {
-            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Realizar ataque \n4-Aumentar a energia \n0-Sair");
+            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Realizar ataque " +
+                    "\n4-Aumentar a energia \n5-Ativar habilidade especial \n0-Sair");
             op = sc.nextInt();
 
             switch (op) {
@@ -48,6 +49,9 @@ public class Main {
                     int qtd = sc.nextInt();
                     int nivelAtual = personagem.aumentarEnergia(qtd);
                     System.out.println("Nivel atual de energia: " + nivelAtual);
+                    break;
+                case 5:
+                    personagem.ativarHabilidadeEspecial();
                     break;
                 case 0:
                     System.out.println("Finalizando o programa");

@@ -43,6 +43,12 @@ public class Main {
                     String ataque = sc.next() + sc.nextLine();
                     personagem.atacar(ataque);
                     break;
+                case 4:
+                    System.out.println("Digite a quantidade de energia:");
+                    int qtd = sc.nextInt();
+                    int nivelAtual = personagem.aumentarEnergia(qtd);
+                    System.out.println("Nivel atual de energia: " + nivelAtual);
+                    break;
                 case 0:
                     System.out.println("Finalizando o programa");
                 default:

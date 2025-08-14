@@ -23,4 +23,9 @@ public class PersonagemMagico {
             System.out.println("Sem energia para atacar...");
         }
     }
+
+    public int aumentarEnergia(int energia) {
+        nivelEnergia += energia;
+        return nivelEnergia;
+    }
 }

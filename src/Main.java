@@ -9,7 +9,7 @@ public class Main {
         int op;
 
         do {
-            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Realizar ataque \n0-Sair");
+            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Realizar ataque \n4-Aumentar a energia \n0-Sair");
             op = sc.nextInt();
 
             switch (op) {

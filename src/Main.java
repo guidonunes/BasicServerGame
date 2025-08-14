@@ -44,8 +44,6 @@ public class Main {
                     System.out.println("Opção inválida");
 
             }
-
-
         } while(op != 0);
         sc.close();
     }

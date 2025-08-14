@@ -14,4 +14,13 @@ public class PersonagemMagico {
     public PersonagemMagico(String nome) { this.nome = nome;}
 
     public PersonagemMagico(){}
+
+    public void atacar(String ataque) {
+        if(nivelEnergia >= 10) {
+            System.out.println(nome + " realizou um ataque: " + ataque + "!");
+            nivelEnergia -= 10;
+        } else {
+            System.out.println("Sem energia para atacar...");
+        }
+    }
 }

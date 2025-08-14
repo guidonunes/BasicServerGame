@@ -10,7 +10,7 @@ public class Main {
 
         do {
             System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Realizar ataque " +
-                    "\n4-Aumentar a energia \n5-Ativar habilidade especial \n0-Sair");
+                    "\n4-Aumentar a energia \n5-Ativar habilidade especial \n6-Habilitar habilidade especial \n0-Sair");
             op = sc.nextInt();
 
             switch (op) {
@@ -52,6 +52,9 @@ public class Main {
                     break;
                 case 5:
                     personagem.ativarHabilidadeEspecial();
+                    break;
+                case 6:
+                    personagem.habilidade.ativarHabilidade();
                     break;
                 case 0:
                     System.out.println("Finalizando o programa");

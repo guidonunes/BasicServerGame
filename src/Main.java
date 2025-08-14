@@ -9,7 +9,7 @@ public class Main {
         int op;
 
         do {
-            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n0-Sair");
+            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Realizar ataque \n0-Sair");
             op = sc.nextInt();
 
             switch (op) {
@@ -37,6 +37,11 @@ public class Main {
                 case 2:
                     System.out.println("Nome: " + personagem.nome + "\nPoder: " +personagem.poderMagico + "\nNivel de Energia: " + personagem.nivelEnergia);
                     System.out.println("Habilidade: " + personagem.habilidade.nome + " Custo energia: " + personagem.habilidade.custoEnergia + " Habilitada: " + personagem.habilidade.habilitada);
+                    break;
+                case 3:
+                    System.out.println("Digite o nome do ataque: ");
+                    String ataque = sc.next() + sc.nextLine();
+                    personagem.atacar(ataque);
                     break;
                 case 0:
                     System.out.println("Finalizando o programa");

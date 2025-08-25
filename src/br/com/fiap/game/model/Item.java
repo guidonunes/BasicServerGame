@@ -1,10 +1,10 @@
 package br.com.fiap.game.model;
 
 public class Item {
-    String nome;
-    String descricao;
-    boolean raro;
-    int nivelPoder;
+    public String nome;
+    public String descricao;
+    public boolean raro;
+    public int nivelPoder;
 
     public Item(String nome, String descricao, boolean raro, int nivelPoder) {
         this.nome = nome;

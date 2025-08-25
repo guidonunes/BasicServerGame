@@ -1,4 +1,5 @@
 package br.com.fiap.game.view;
+import br.com.fiap.game.model.Item;
 
 import java.util.Scanner;
 
@@ -10,8 +11,8 @@ public class ItemView {
 
         do {
             System.out.println("Escolha uma opção:");
-            System.out.println("1-Cadastrar br.com.fiap.game.model.Item");
-            System.out.println("2-Exibir br.com.fiap.game.model.Item");
+            System.out.println("1-Cadastrar item");
+            System.out.println("2-Exibir item");
             System.out.println("0-Sair");
 
             op = sc.nextInt();

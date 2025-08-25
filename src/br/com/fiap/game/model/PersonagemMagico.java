@@ -1,11 +1,11 @@
 package br.com.fiap.game.model;
 
 public class PersonagemMagico {
-    String nome;
-    int nivelEnergia;
-    String poderMagico;
+    public String nome;
+    public int nivelEnergia;
+    public String poderMagico;
 
-    HabilidadeEspecial habilidade;
+    public HabilidadeEspecial habilidade;
 
     public PersonagemMagico(String nome, int nivelEnergia, String poderMagico) {
         this.nome = nome;

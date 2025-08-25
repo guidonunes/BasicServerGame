@@ -1,9 +1,9 @@
 package br.com.fiap.game.model;
 
 public class PersonagemMagico {
-    public String nome;
-    public int nivelEnergia;
-    public String poderMagico;
+    private String nome;
+    private int nivelEnergia;
+    private String poderMagico;
 
     public HabilidadeEspecial habilidade;
 
@@ -18,6 +18,14 @@ public class PersonagemMagico {
     }
 
     public PersonagemMagico(){}
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
     public void atacar(String ataque) {
         if(nivelEnergia >= 10) {

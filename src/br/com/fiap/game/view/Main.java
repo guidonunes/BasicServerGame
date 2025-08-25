@@ -26,9 +26,9 @@ public class Main {
                     String poder = sc.next() + sc.nextLine();
                     System.out.println("Digite o nivel de energia");
                     int energia = sc.nextInt();
-                    personagem.nome = nome;
-                    personagem.nivelEnergia = energia;
-                    personagem.poderMagico = poder;
+                    personagem.setNome(nome);
+                    personagem.setNivelEnergia(energia);
+                    personagem.setPoderMagico(poder);
 
                     System.out.println("Digite o nome da habilidade especial:");
                     String nomeHabilidade = sc.next() + sc.nextLine();
@@ -38,11 +38,11 @@ public class Main {
                     boolean ativada = sc.nextBoolean();
 
                     HabilidadeEspecial habilidadeEspecial = new HabilidadeEspecial(nomeHabilidade, nivelEnergia, ativada);
-                    personagem.habilidade = habilidadeEspecial;
+                    personagem.setHabilidade(habilidadeEspecial);
                     break;
                 case 2:
-                    System.out.println("Nome: " + personagem.nome + "\nPoder: " +personagem.poderMagico + "\nNivel de Energia: " + personagem.nivelEnergia);
-                    System.out.println("Habilidade: " + personagem.habilidade.nome + " Custo energia: " + personagem.habilidade.custoEnergia + " Habilitada: " + personagem.habilidade.habilitada);
+                    System.out.println("Nome: " + personagem.getNome() + "\nPoder: " +personagem.getPoderMagico() + "\nNivel de Energia: " + personagem.getNivelEnergia());
+                    System.out.println("Habilidade: " + personagem.getHabilidade().getNome() + " Custo energia: " + personagem.getHabilidade().getCustoEnergia() + " Habilitada: " + personagem.getHabilidade().isHabilitada());
                     break;
                 case 3:
                     System.out.println("Digite o nome do ataque: ");
@@ -59,7 +59,7 @@ public class Main {
                     personagem.ativarHabilidadeEspecial();
                     break;
                 case 6:
-                    personagem.habilidade.ativarHabilidade();
+                    personagem.getHabilidade().ativarHabilidade();
                     break;
                 case 0:
                     System.out.println("Finalizando o programa");

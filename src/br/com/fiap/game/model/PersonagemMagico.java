@@ -5,7 +5,7 @@ public class PersonagemMagico {
     private int nivelEnergia;
     private String poderMagico;
 
-    public HabilidadeEspecial habilidade;
+    private HabilidadeEspecial habilidade;
 
     public PersonagemMagico(String nome, int nivelEnergia, String poderMagico) {
         this.nome = nome;
@@ -27,6 +27,30 @@ public class PersonagemMagico {
         this.nome = nome;
     }
 
+    public int getNivelEnergia() {
+        return nivelEnergia;
+    }
+
+    public void setNivelEnergia(int nivelEnergia) {
+        this.nivelEnergia = nivelEnergia;
+    }
+
+    public String getPoderMagico() {
+        return poderMagico;
+    }
+
+    public void setPoderMagico(String poderMagico) {
+        this.poderMagico = poderMagico;
+    }
+
+    public HabilidadeEspecial getHabilidade() {
+        return habilidade;
+    }
+
+    public void setHabilidade(HabilidadeEspecial habilidade) {
+        this.habilidade = habilidade;
+    }
+
     public void atacar(String ataque) {
         if(nivelEnergia >= 10) {
             System.out.println(nome + " realizou um ataque: " + ataque + "!");
@@ -42,11 +66,11 @@ public class PersonagemMagico {
     }
 
     public void ativarHabilidadeEspecial() {
-        if(!habilidade.habilitada) {
+        if(!habilidade.isHabilitada()) {
             System.out.println("Habilidade especial não está ativada.");
-        } else if (nivelEnergia >= habilidade.custoEnergia) {
-            System.out.println("Ativando a habilidade: " + habilidade.nome);
-            nivelEnergia -= habilidade.custoEnergia;
+        } else if (nivelEnergia >= habilidade.getCustoEnergia()) {
+            System.out.println("Ativando a habilidade: " + habilidade.getNome());
+            nivelEnergia -= habilidade.getCustoEnergia();
         } else {
             System.out.println(nome + " está sem energia para a habilidade especial");
         }
